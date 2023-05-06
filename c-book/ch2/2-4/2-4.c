@@ -38,9 +38,8 @@ void squeeze(char word[], char sub[]) {
     for (i = j = 0; word[i] != '\0'; i++) {
         for (contains = k = 0; sub[k] != '\0' && !contains; k++)
             contains = (word[i] == sub[k]);
-        if (!contains) {
+        if (!contains)
             word[j++] = word[i];
-        }
     }
     word[j] = '\0';
 }
