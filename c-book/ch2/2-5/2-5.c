@@ -24,6 +24,8 @@ int main() {
     print_any(word3, sub3);
     print_any(word4, sub4);
     print_any(word5, sub5);
+
+    return 0;
 }
 
 void print_any(char word[], char sub[]) {

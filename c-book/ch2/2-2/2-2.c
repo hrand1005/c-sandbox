@@ -8,6 +8,8 @@ int main() {
 
     while (get_line(line, MAXLINE))
         printf("line: %s", line);
+
+    return 0;
 }
 
 int get_line(char s[], int lim) {

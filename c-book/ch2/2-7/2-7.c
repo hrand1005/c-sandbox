@@ -5,6 +5,7 @@ unsigned invert(int, int, int);
 
 int main() {
     print_invert(11, 3, 2);
+    return 0;
 }
 
 void print_invert(int x, int p, int n) {

@@ -19,6 +19,8 @@ int main() {
     sint_limits();
     ulong_limits();
     slong_limits();
+
+    return 0;
 }
 
 void uchar_limits() {

@@ -6,6 +6,7 @@ int intbits();
 
 int main() {
     print_rightrot(1, 0);
+    return 0;
 }
 
 void print_rightrot(int x, int n) {

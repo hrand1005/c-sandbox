@@ -13,6 +13,8 @@ int main() {
     print_htoi("ABC");
     print_htoi("BC");
     print_htoi("C");
+
+    return 0;
 }
 
 void print_htoi(const char s[]) {

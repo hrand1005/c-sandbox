@@ -5,6 +5,7 @@ unsigned setbits(int, int, int, int);
 
 int main() {
     print_setbits(11, 3, 2, 3);
+    return 0;
 }
 
 void print_setbits(int x, int p, int n, int y) {

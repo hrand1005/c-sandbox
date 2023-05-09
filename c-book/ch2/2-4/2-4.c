@@ -24,6 +24,8 @@ int main() {
     print_squeeze(word3, sub3);
     print_squeeze(word4, sub4);
     print_squeeze(word5, sub5);
+
+    return 0;
 }
 
 void print_squeeze(char word[], char sub[]) {
