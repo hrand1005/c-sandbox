@@ -10,7 +10,6 @@ int main() {
     char line[MAXLINE];
     int found;
 
-    found = -1;
     while (get_line(line, MAXLINE) > 0) {
         if ((found = strrindex(line, pattern)) != -1) {
             printf("pattern \"%s\" found at %d\n", pattern, found);
@@ -40,7 +39,7 @@ int strrindex(char s[], char t[]) {
     for (i = 0; s[i] != '\0'; i++)
         ;
 
-    for (i -= 1; i != 0; i--) {
+    for (i -= 1; i >= 0; i--) {
         for (j = i, k = 0; t[k] != '\0' && s[j] == t[k]; j++, k++)
             ;
         if (k > 0 && t[k] == '\0')
