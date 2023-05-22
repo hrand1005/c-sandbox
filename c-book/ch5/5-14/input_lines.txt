@@ -1,0 +1,5 @@
+something 1
+something 2
+something 3
+another thing here, which is the fourth line (4)
+finally, let us have line 5
