@@ -13,8 +13,8 @@ ll_queue_t *ll_queue_new(void) {
     return q;
 }
 
-/* ll_queue_push: pushes val to the end of ll_queue */
-int ll_queue_push(ll_queue_t *q, int val) {
+/* ll_queue_enqueue: enqueues val to the end of ll_queue */
+int ll_queue_enqueue(ll_queue_t *q, int val) {
     node_t *n;
 
     if ((n = malloc(sizeof(node_t))) == NULL)
@@ -32,8 +32,8 @@ int ll_queue_push(ll_queue_t *q, int val) {
     return 0;
 }
 
-/* ll_queue_pop: pops oldest ll_queue value and saves it to 'val' arg */
-int ll_queue_pop(ll_queue_t *q, int *val) {
+/* ll_queue_dequeue: dequeues oldest ll_queue value and saves it to 'val' arg */
+int ll_queue_dequeue(ll_queue_t *q, int *val) {
     node_t *tmp;
 
     if (q->size == 0)

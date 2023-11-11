@@ -16,27 +16,27 @@ void test_1(void) {
 
     q = ll_queue_new();
 
-    /* popping an empty ll_queue should return error */
-    assert(ll_queue_pop(q, &val) == 1);
+    /* dequeue-ing an empty ll_queue should return error */
+    assert(ll_queue_dequeue(q, &val) == 1);
 
-    /* push multiple values to the ll_queue */
+    /* enqueue multiple values to the ll_queue */
     for (int i = 0; i < 3; i++)
-        ll_queue_push(q, i);
+        ll_queue_enqueue(q, i);
 
     /* ll_queue size should be updated */
     assert(q->size == 3);
 
-    /* elements should be popped in LIFO order */
+    /* elements should be dequeued in LIFO order */
     for (int i = 0; i < 3; i++) {
-        assert(ll_queue_pop(q, &val) == 0);
+        assert(ll_queue_dequeue(q, &val) == 0);
         assert(val == i);
     }
 
     /* ll_queue size should be zero again */
     assert(q->size == 0);
 
-    /* popping empty ll_queue should return error (again) */
-    assert(ll_queue_pop(q, &val) == 1);
+    /* dequeue-ing empty ll_queue should return error (again) */
+    assert(ll_queue_dequeue(q, &val) == 1);
 
     ll_queue_free(q);
 }
